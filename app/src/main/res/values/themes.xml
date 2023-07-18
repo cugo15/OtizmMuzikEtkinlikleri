@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OyunVeMüzik" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+        <style name="first_key_style_for_pink_key">
+            <item name="android:layout_width">57dp</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:background">@drawable/pressed_and_normal_selector</item>
+            <item name="android:stateListAnimator">@null</item>
+            <item name="android:layout_weight">1</item>
+
+
+        </style>
+
+    <style name="common_key_style_for_rest_of_the_piano_keys">
+        <item name="android:layout_width">57dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/pressed_and_normal_selector</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="black_piano_key_style">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/black_piano_key_selector</item>
+        <item name="android:layout_marginLeft">-14dp</item>
+    </style>
+
+
+</resources>

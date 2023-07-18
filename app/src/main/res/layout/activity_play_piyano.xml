@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center|top"
+    android:paddingBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    tools:context=".PlayPiyano">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doremi"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/pianodo"
+            android:fontFamily="@font/mogra"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cdef"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/pianoc"
+            android:fontFamily="@font/mogra"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rainbow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rainbow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/oyunmenudon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/evicon3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/decsize"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/minus" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="45dp"
+            app:cardCornerRadius="90dp"
+            android:layout_height="45dp" >
+
+            <ImageView
+                android:id="@+id/incsize"
+                android:layout_width="51dp"
+                android:layout_marginEnd=".1dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/plus" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.aecg.oyunvemuzikae.CustomScv
+        android:id="@+id/pianoscro"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/pianolayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p1"
+                    style="@style/first_key_style_for_pink_key"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p2"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p1"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p3"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p2"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p4"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p3"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p5"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p4"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p6"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p5"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p7"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p6"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p8"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p7"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p9"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p8"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p10"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p9"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p11"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p10"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p12"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p11"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p13"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p12"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p14"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p13"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#FF5722"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p15"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p14"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p16"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_width="54dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p15"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p17"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p16"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p18"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p17"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p19"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p18"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p20"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p19"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p21"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p20"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#3F51B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p22"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p21"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p23"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p22"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p24"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p23"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p25"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p24"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p26"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p25"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p27"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p26"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p28"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p27"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p29"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p28"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p30"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p29"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p31"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p30"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p32"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p31"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p33"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p32"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p34"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p33"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p35"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p34"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#009688"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/p36"
+                    style="@style/common_key_style_for_rest_of_the_piano_keys"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/p35"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="15dp"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#E91E63"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b1"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b2"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p2" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b3"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p4" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b4"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p5" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b5"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p6" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b6"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p8" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b7"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p9" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b8"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p11" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b9"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p12" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b10"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p13" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b11"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p15" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b12"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p16" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b13"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p18" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b14"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p19" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b15"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p20" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b16"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p22" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b17"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p23" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b18"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p25" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b19"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p26" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b20"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p27" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b21"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p29" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b22"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p30" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b23"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p32" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b24"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p33" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/b25"
+                    style="@style/black_piano_key_style"
+                    android:layout_toRightOf="@id/p34" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.aecg.oyunvemuzikae.CustomScv>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SeekBar
+            android:id="@+id/pianoseek"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/seekbarbkg"
+            android:clickable="false"
+            android:indeterminate="false"
+            android:max="36"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progress="14"
+            android:progressDrawable="@null"
+            android:thumb="@drawable/baseline_pan_tool_alt_24" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
