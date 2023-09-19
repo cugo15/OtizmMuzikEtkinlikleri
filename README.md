@@ -8,7 +8,7 @@
 6) Eğitici Müzikler ve Karaoke Müzikler.
 #
 ![anasayfa](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/471fbbce-a01a-476e-85cd-ae90e9134de3)
-
+#
 ### Piyano
 ![p1](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/864efc3c-8c0b-430d-a825-9c012db20d9d)
 ![p2](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/b9844555-760d-4fc9-8868-d5fc18aa656d)
@@ -25,7 +25,7 @@
 ![g6](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/44e6c982-da4d-4acc-bb44-6835d7754abd)
 ![g7](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/2607bb60-bb60-4992-b60f-d57e9c2a12e8)
 ![g8](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/0a035d8c-9da9-4472-aa9b-e04231d4ebf3)
-
+#
 ### Oyunlar
 ![o1](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/d0f26046-4558-4c4b-ac96-ed1e6cd1b80c)
 #### Hafıza Oyunu
@@ -35,6 +35,7 @@
 ![o4](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/cb984bd8-2c99-4451-870c-37b79427b61e)
 #### Müziğin Temposunu Ayırt Etme
 ![o5](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/b06bcaf5-39d6-4205-85cb-722c195d9a80)
+#
 ### Eğitici Müzikler ve Karaoke Müzikler
 ![m1](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/2d96af80-d67d-4e14-a14e-345281bf5943)
 ![m2](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/e17f9b4e-d6f6-4989-9da8-22f63c1b078d)
