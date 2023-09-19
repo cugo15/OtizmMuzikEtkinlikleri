@@ -7,6 +7,8 @@
 5) Günlük Yaşamda Karşılaşılan Sesleri ve Enstrüman Seslerini Tanıma,
 6) Eğitici Müzikler ve Karaoke Müzikler.
 #
+https://play.google.com/store/apps/details?id=com.aecg.oyunvemuzikae&hl=tr&gl=US&pli=1
+#
 ![anasayfa](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/471fbbce-a01a-476e-85cd-ae90e9134de3)
 #
 ### Piyano
