@@ -6,6 +6,7 @@
 4) Müziğin Temposunu Ayırt Etme,
 5) Günlük Yaşamda Karşılaşılan Sesleri ve Enstrüman Seslerini Tanıma,
 6) Eğitici Müzikler ve Karaoke Müzikler.
+#
 ![anasayfa](https://github.com/cugo15/OtizmMuzikEtkinlikleri/assets/70814057/471fbbce-a01a-476e-85cd-ae90e9134de3)
 
 ### Piyano
